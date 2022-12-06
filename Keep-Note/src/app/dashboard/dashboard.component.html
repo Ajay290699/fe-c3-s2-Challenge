@@ -1,0 +1,10 @@
+<div id="search">
+    <input type="text" placeholder="Search Note" [(ngModel)]="searchNotes">
+    <button (click)="search()">search</button>
+</div>
+
+
+<div *ngFor="let card of note" id="card">
+    <h3>{{card.title}}</h3><br>
+    <p>{{card.content}}</p>
+</div>
